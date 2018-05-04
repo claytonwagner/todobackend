@@ -30,7 +30,7 @@ class TestCreateTodoItem(APITestCase):
 
 class TestUpdateTodoItem(APITestCase):
  	"""
- 	Ensure we can update an existing todo item using PUT
+ 	Ensure we can update an existing todo item using PUT 
  	"""
  	def setUp(self):
  		response = createItem(self.client)
