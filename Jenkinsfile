@@ -19,7 +19,6 @@ node {
             sh "make login"
         }
         sh "make publish"
-
     finally {
         stage 'Collect test reports'
         step([$class: 'JUnitResultArchiver', testResults: '**/reports/*.xml'])
